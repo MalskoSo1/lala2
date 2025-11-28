@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+  </head>
+  <body>
+    <ul id="gallery" class="gallery"></ul>
+
+    <span class="loader"></span>
+    <div class="background-modal">
+      <div class="modal container-modal">
+        <button class="modal-close-btn">
+          <svg class="modal-close-icon" width="32" height="32">
+            <use href="./img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="modal-content-first-part"></div>
+      </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
