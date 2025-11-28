@@ -248,7 +248,7 @@ body {
 }
 
 .modal-close-icon {
-  fill: white;
+  fill: var(--color-scheme-1-text);
 }
 
 .modal-close-icon:hover {
@@ -571,4 +571,9 @@ body {
 .modal-icon-more-text,
 .modal-icon-less-text {
   fill: var(--color-scheme-1-text);
+}
+
+.modal-icon-more-text:hover,
+.modal-icon-less-text:hover {
+  fill: rgba(255, 255, 255, 0.6);
 }
