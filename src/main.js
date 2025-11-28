@@ -204,12 +204,17 @@ refs.gallery.addEventListener('click', async event => {
   // !TAKE ID
   artistId = event.target.dataset.artistId;
 
-  // !CALL FUNCTION CREATE INFO ABOUT ARTIST IN MODAL
   document.body.classList.add('no-scroll');
 
-  // !OPEN
+  // !CALL FUNCTION CREATE INFO ABOUT ARTIST IN MODAL
   await createModalInfo(artistId);
+
+  // !OPEN
   refs.backgroundModal.classList.add('is-active');
+  refs.backgroundModal.scrollTo({
+    top: 0,
+    behavior: 'auto',
+  });
 
   refs.gallery.classList.add('previous-content');
   hideLoader();
@@ -312,7 +317,7 @@ function setupShowMore(fullText, limit) {
       refs.backgroundModal.scrollTo({
         // top: globalVariables.backgroundModalScrollTop,
         top: 0,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
       contentElement.appendChild(buttonElement);
     } else {
